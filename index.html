@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 1</title>
+  </head>
+  <body>
+                              <!-- au survol de la souris + ma fonction -->  <!-- quand j'enlève ma souris -->
+      <img src="images/image1.jpg" onmouseover="affich_border(this);" onmouseout="remove_cadre(this)" id="image1"/>
+      <script>
+      //J'appelle ma fonction
+        function affich_border(image1){
+          //Le nom de l'id + style.border (css)
+          image1.style.border = '5px solid black';
+        }
+        //J'apelle ma fonction que j'ai attribué sur onmouseout
+        function remove_cadre(image1) {
+          // '0' pour dire pas de bordure
+	        image1.style.border = '0';
+        }
+      </script>
+  </body>
+</html>
